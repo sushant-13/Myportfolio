@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sushant Kumar | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      .card {
+        background-color: #1f1f2e;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+      }
+      .card h3 {
+        margin-top: 0;
+        color: #4fd1c5;
+      }
+      .profile-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #4fd1c5;
+        margin: 20px auto;
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+      }
+      .skills-grid {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+      .skill-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .skill-icon img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid #4fd1c5;
+        margin-bottom: 10px;
+      }
+      .skill-icon:hover {
+        transform: scale(1.1);
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .download-btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <div class="content">
+        <h1><a href="#intro">Sushant Kumar</a></h1>
+        <p>B.Tech IT | Java Developer | Linux & DSA Enthusiast</p>
+        <ul class="actions">
+          <li>
+            <a
+              href="assets/resume.pdf"
+              download
+              class="button primary icon solid fa-download"
+              >Download Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="button icon solid fa-chevron-down scrolly"
+              >View Projects</a
+            >
+          </li>
+        </ul>
+      </div>
+      <img src="images/sushant.jfif" alt="Sushant Kumar" class="profile-img" />
+    </header>
+
+    <!-- Main Sections -->
+    <div id="wrapper">
+      <section id="education" class="wrapper style2 fade-up">
+        <div class="inner">
+          <h2>Education</h2>
+          <div class="card">
+            <h3>B.Tech in Information Technology</h3>
+            <p>Muzaffarpur Institute of Technology (2021 – 2025)</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="wrapper style3 fade-up">
+        <div class="inner">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-icon">
+              <img src="images/html.jfif" alt="html" />
+              <span>html</span>
+            </div>
+            <div class="skill-icon">
+              <img src="images/c++.png" alt="c++" />
+              <span>c++</span>
+            </div>
+            <div class="skill-icon">
+              <img src="images/github.jfif" alt="Git" />
+              <span>Git</span>
+            </div>
+            <div class="skill-icon">
+              <img src="images/github.png" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
+            <div class="skill-icon">
+              <img src="images/css.png" alt="css" />
+              <span></span>CSS</span>
+            </div>
+            <div class="skill-icon">
+              <img src="images/js.png" alt="Networks" />
+              <span>js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="wrapper style2 fade-up">
+        <div class="inner">
+          <h2>Projects</h2>
+          <div class="card">
+            <h3>Hostel Management System</h3>
+            <p>
+              Collaborated in a team to develop a web-based application aimed at
+              streamlining hostel operations and improving student convenience.
+              Features include room allotment, student record management,
+              complaint tracking, and notice sharing.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Timetable Management System</h3>
+            <p>
+              Built a system to assign subjects and teachers to time slots with
+              conflict prevention logic for classroom and faculty allocation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="wrapper style3 fade-up">
+        <div class="inner">
+          <h2>Experience</h2>
+          <div class="card">
+            <h3>Intern - Salesforce</h3>
+            <p>Dec 2023 – Jan 2024</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="wrapper style1 fade-up">
+        <div class="inner">
+          <h2>Contact</h2>
+          <p>Email: sushantkumar2258@gmail.com | Phone: +91 6299695879</p>
+          <p>
+            LeetCode:
+            <a href="https://leetcode.com/u/sushant_7_/">sushant_7_</a> |
+            LinkedIn:
+            <a href="https://linkedin.com/in/sushant2285">sushant2285</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; Sushant Kumar. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

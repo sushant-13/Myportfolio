@@ -136,12 +136,86 @@
   }
 }
 
+.headerContainer{
+  display: flex;
+  flex-direction: row;
+  /* gap: 50px; */
+  padding: 100px;
+}
+.aboutMe{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  color: white;
+  
+}
+.aboutMe h3{
+  color:white;
+}
+.profileImg {
+  width: 450px;        /* or any equal width & height */
+  height: 450px;
+  border-radius: 50%;
+  /* object-fit: cover;   ensures the image doesn't stretch */
+}
+.sushantName{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 43px;
+  font-weight: 600;
+  color: white;
 
+}
+.sushantEdu{
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+
+.headerContainer{
+			/* color: #4696e5; */
+   background-color:#49c7ea;
+}
+.leftContent{
+  /* background-color: black; */
+  padding: 30px;
+}
+.viewProject{
+  background-color: rgb(7, 173, 251);
+}
+@media (max-width:768px) {
+.headerContainer{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.profileImg {
+  
+  margin-left: 45px;
+  /* object-fit: cover;   ensures the image doesn't stretch */
+}
+}
+@media (max-width:480px) {
+  .profileImg {
+  width: 250px;        /* or any equal width & height */
+  height: 250px;
+  border-radius: 50%;
+  margin-left: 35px;
+  /* object-fit: cover;   ensures the image doesn't stretch */
+}
+.leftContent{
+  /* background-color: black; */
+  padding: 0px;
+}
+.headerContainer{
+  
+  padding: 50px;
+}
+}
     </style>
   </head>
   <body class="is-preload">
     <!-- Header -->
-    <header id="header">
+    <!-- <header id="header">
               <div class="header-flex">
                             <div class="content">
                               <h1><a href="#intro">Sushant Kumar</a></h1>
@@ -161,7 +235,35 @@
                             </div>
                             <img src="images/sushant.jfif" alt="Sushant Kumar" class="profile-img" />
                           </div>
-    </header>
+    </header> -->
+    <header class="header">
+      <div class="headerContainer">
+                    <div class="leftContent">
+                      <h1 class="sushantName"><a href="#intro">Sushant Kumar</a></h1>
+                      <p class="sushantEdu">B.Tech IT | Java Developer</p>
+                      <div class="aboutMe">
+                        <h3>About me :</h3>
+                         <p>A passionate Frontend Developer with a focus on clean UI, responsive design, and smooth user experiences. Skilled in HTML, CSS, JavaScript, and React, and always eager to build beautiful and user-friendly web interfaces. A creative problem-solver and a UI enthusiast who enjoys turning ideas into functional and engaging websites.</p>
+                      </div>
+                      <ul class="actions">
+                        <li>
+                          <a href="assets/sushan.pdf" download class="button primary icon solid fa-download">
+                            Download Resume
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#projects" class="button primary icon solid fa-chevron-down scrolly">
+                            View Projects
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="rightContainer">
+                      <img src="images/sushant.jfif" alt="Sushant Kumar" class="profileImg" />
+                    </div>
+                    
+                  </div>
+</header>
 
     <!-- Main Sections -->
     <div id="wrapper">
@@ -254,14 +356,14 @@
                 <h2>Contact</h2>
                 <div class="contact-icons">
                   <p>
-                    <strong><i class="fas fa-envelope"></i> Email:</strong>
+                    <strong><i class="fas fa-envelope"></i> Email:</strong> sushantkumar2285@gmail.com
                     <a href="mailto:sushantkumar2258@gmail.com"></a>
                   </p>
                   <p>
                     <strong><i class="fas fa-phone"></i> Phone:</strong> +91 6299695879
                   </p>
                   <p>
-                    <strong><i class="fab fa-linkedin"></i> LinkedIn:</strong>
+                    <strong><i class="fab fa-linkedin"></i> LinkedIn:</strong> www.linkedin.com/in/sushant2285
                     <a href="https://linkedin.com/in/sushant2285"></a>
                   </p>
                 </div>

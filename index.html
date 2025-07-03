@@ -211,6 +211,47 @@
   padding: 50px;
 }
 }
+.footerContainer{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items:center;
+ padding: 30px;
+ font-size: 20px;
+ font-weight: 700;
+}
+.footerContainerChild{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  /* background-color: black; */
+  
+}
+@media (max-width:768px) {
+  .footerContainer{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items:center;
+ padding: 30px;
+ font-size: 20px;
+ /* font-weight: 600 !important; */
+}
+.footerContainerChild{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  /* font-weight: 700; */
+  /* background-color: black; */
+  
+}
+.footerContainerChild a{
+  font-weight:600 ;
+}
+}
     </style>
   </head>
   <body class="is-preload">
@@ -290,8 +331,8 @@
       <section id="skills" class="wrapper style3 fade-up">
               <div class="inner">
                 <h2>Skills</h2>
-                <div class="skills-grid">
-                  <div class="skill-icon">
+                <div class="skills-grid ">
+                  <div class="skill-icon ">
                     <img src="images/html.jfif" alt="html" />
                     <span>html</span>
                   </div>
@@ -352,27 +393,32 @@
       </section>
 
       <section id="contact" class="wrapper style1 fade-up">
-              <div class="inner">
-                <h2>Contact</h2>
-                <div class="contact-icons">
+              <div class="footerContainer">
+                <h2>Contact Me</h2>
+
+                <div class="footerContainerChild">
                   <p>
-                    <strong><i class="fas fa-envelope"></i> Email:</strong> sushantkumar2285@gmail.com
-                    <a href="mailto:sushantkumar2258@gmail.com"></a>
+                    
+                    <a href="mailto:sushantkumar2258@gmail.com"><i class="fas fa-envelope"></i> Email</a>
                   </p>
                   <p>
-                    <strong><i class="fas fa-phone"></i> Phone:</strong> +91 6299695879
+                    <a href="tel:+916299695879">
+                    <i class="fas fa-phone"></i> Phone</a>
                   </p>
                   <p>
-                    <strong><i class="fab fa-linkedin"></i> LinkedIn:</strong> www.linkedin.com/in/sushant2285
-                    <a href="https://linkedin.com/in/sushant2285"></a>
+                    
+                    <a href="https://linkedin.com/in/sushant2285"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                  </p>
+                  <p>
+                    
+                    <a href="https://github.com/sushant-13"><i class="fab fa-linkedin"></i> Github</a>
+                  </p>
+                  <p>
+                    
+                    <a href="https://www.instagram.com/sushant_7_?igsh=amxwaTlnNDc0cWlo"><i class="fab fa-linkedin"></i>Instagram</a>
                   </p>
                 </div>
-                <form class="contact-form" method="post" action="#">
-                  <input type="text" name="name" placeholder="Your Name" required />
-                  <input type="email" name="email" placeholder="Your Email" required />
-                  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                  <button type="submit" class="button primary">Send Message</button>
-                </form>
+                
               </div>
             </section>
             
@@ -382,7 +428,7 @@
     <footer id="footer" class="wrapper style1-alt">
       <div class="inner">
         <ul class="menu">
-          <li>&copy; Sushant Kumar. All rights reserved.</li>
+          <li>&copy; Sushant Kumar.</li>
         
       </div>
     </footer>
